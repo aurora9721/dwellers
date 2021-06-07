@@ -1,0 +1,194 @@
+/* CHOICE PAGE: CONTROL */
+
+html,
+body {
+padding: 0;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  opacity: 100%;
+}
+
+b {
+  font-family: "Jaune v0.8 TRIAL Grande Thin";
+  text-align: center;
+}
+
+.container{
+  /* background-color: beige;
+  z-index: -1000;
+  position: static;
+  width: 100vw;
+  height: 100vh;*/
+  overflow: hidden;
+}
+
+.backintro{
+  width: 11vw;
+  height: 4vh;
+  background-color: bisque;
+  margin-top: 82vh;
+  margin-bottom: 9vh;
+  margin-right: 0vw;
+  margin-left: 0vw;
+  left:0;
+  padding-left: 3vw;
+  padding-right: 4vw;
+  padding-top: 0.4vh;
+  padding-bottom: 0.4vh;
+  position: absolute;
+  overflow: hidden;
+  z-index: 500;
+  font-family: "Jaune v0.8 TRIAL Petite Bold";
+  color: #d9b2d9;
+  font-size: 1.2vw;
+}
+
+.furtherreading {
+  width: 100vw;
+  height: 4vh;
+  background-color: bisque;
+  /* opacity: 60%; */
+  margin-top: 88vh;
+  margin-bottom: 9vh;
+  margin-left: 80vw;
+  padding-left: 4vw;
+  padding-top: 0.4vh;
+  padding-bottom: 0.4vh;
+  position: fixed;
+  overflow: hidden;
+  z-index: 500;
+  font-family: "Jaune v0.8 TRIAL Petite Bold";
+  color: #d9b2d9;
+  font-size: 1.2vw;
+}
+
+.backchoices {
+  width: 23vw;
+  height: 4vh;
+  background-color: bisque;
+  margin-top: 88vh;
+  margin-bottom: 9vh;
+  margin-right: 0vw;
+  margin-left: 0vw;
+  left:0;
+  padding-left: 3vw;
+  padding-right: 4vw;
+  padding-top: 0.4vh;
+  padding-bottom: 0.4vh;
+  position: absolute;
+  overflow: hidden;
+  z-index: 500;
+  font-family: "Jaune v0.8 TRIAL Petite Bold";
+  color: #d9b2d9;
+  font-size: 1.2vw;
+
+}
+
+.titlepg{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: beige; */
+  float: left;
+  /* padding-left: 10vw;
+  padding-top: 6vh; */
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-family: "NaN Jaune Book";
+  height: 100vh;
+  width: 100vw;
+  font-style: normal;
+  font-weight: normal;
+  color: bisque;
+  background-color: #d9b2d9;
+  /* opacity: 60%; */
+  font-size: 5vw;
+  line-height: 5vw;
+  overflow: hidden;
+  padding-left: 7vw;
+  padding-top: 10vh;
+  padding-bottom: 7vh;
+  position: fixed;
+  z-index: -110;
+}
+
+.subtitle {
+  font-family: "Jaune v0.8 TRIAL Grande Thin";
+  height: auto;
+  width: 100vw;
+  font-style: normal;
+  font-weight: normal;
+  color: bisque;
+  /* background-color: bisque; */
+  /* opacity: 60%; */
+  font-size: 5vw;
+  line-height: 5vw;
+  overflow: hidden;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-top: 10vh;
+  padding-bottom: 7vh;
+  margin-top: 10vh;
+  position: fixed;
+  z-index: -100;
+  /* text-align: center; */
+}
+
+.choicecontainer {
+  width: auto;
+  height: 100vh;
+  margin-top: 37vh;
+  margin-left: 14vw;
+  margin-right: 14vw;
+  justify-content: center;
+}
+
+.choicetitle {
+  width: 20vw;
+  height: 32vh;
+  float: left;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2.5vh;
+  margin-top: 2.5vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 2.5vh;
+  padding-bottom: 1vh;
+  overflow: hidden;
+  background-color: bisque;
+  border-radius: 1em;
+  font-family: "Literata 20pt";
+  font-style: italic;
+  font-size: 1.8vw;
+  text-align: center;
+
+}
+
+img {
+  width: 20vw;
+  height: 32vh;
+  padding-left: -1vw;
+  padding-right: -1vw;
+  margin-left: -2vw;
+  margin-right: -2vw;
+  object-fit: scale-down;
+}
+
+.choicetitle:hover {
+  /* background-color:   #ffc1a9; */
+  background-color:   #e6cce6;
+  /* opacity: 60%; */
+}

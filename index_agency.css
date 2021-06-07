@@ -1,0 +1,258 @@
+/* LANDING PAGE */
+
+html,
+body {
+padding: 0;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  opacity: 100%;
+}
+
+/*
+b {
+  font-style: normal;
+  color: bisque;
+} */
+
+.container{
+  /* background-color: beige;
+  z-index: -1000;
+  position: static;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; */
+}
+
+
+.project{
+  width: 100vw;
+  height: 4vh;
+  /* background-color: darkseagreen; */
+  background-color: bisque;
+  /* background-color: #bcd7bc; */
+  /* opacity: 60%; */
+  margin-top: 82vh;
+  margin-bottom: 9vh;
+  margin-left: 80vw;
+  padding-left: 4vw;
+  padding-top: 0.4vh;
+  padding-bottom: 0.4vh;
+  position: fixed;
+  overflow: hidden;
+  z-index: 500;
+  font-family: "Jaune v0.8 TRIAL Petite Bold";
+  color: #abcdab;
+  /* color:  #b6d3b6; */
+  font-size: 1.2vw;
+}
+
+.furtherreading {
+  width: 100vw;
+  height: 4vh;
+  background-color: bisque;
+    /* background-color: #bcd7bc; */
+  /* opacity: 60%; */
+  margin-top: 88vh;
+  margin-bottom: 9vh;
+  margin-left: 80vw;
+  padding-left: 4vw;
+  padding-top: 0.4vh;
+  padding-bottom: 0.4vh;
+  position: fixed;
+  overflow: hidden;
+  z-index: 500;
+  font-family: "Jaune v0.8 TRIAL Petite Bold";
+  color: #abcdab;
+  font-size: 1.2vw;
+}
+
+
+/* Style the header: fixed position (always stay at the top) */
+/* .header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+
+} */
+
+/* The progress container (grey background) */
+/* .progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  overflow: hidden;
+
+} */
+
+/* The progress bar (scroll indicator) */
+/* .progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+
+} */
+
+
+.titlepg{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: beige; */
+  float: left;
+  /* padding-left: 10vw;
+  padding-top: 6vh; */
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-family: "Jaune v0.8 TRIAL Grande Thin";
+  height: 100vh;
+  width: 100vw;
+  font-style: normal;
+  font-weight: normal;
+  /* color: lightsalmon; */
+  color: bisque;
+  /* color: #bcd7bc; */
+  background-color: #abcdab;
+  /* opacity: 60%; */
+  font-size: 5vw;
+  line-height: 5vw;
+  overflow: hidden;
+  /* text-align:center; */
+  padding-left: 7vw;
+  padding-top: 10vh;
+  padding-bottom: 7vh;
+  position: fixed;
+  z-index: -100;
+
+}
+
+
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parllax__layer--base {
+  transform: translateZ(0);
+}
+
+.parllax__layer--back {
+  transform: translateZ(-1px)  scale(2);
+}
+
+
+img {
+  /* width: 20vw;
+  height: 32vh; */
+  /* padding: 0;
+  margin: 0;
+  object-fit: scale-down; */
+}
+
+#agencyimg1 {
+  width: 60vw;
+  height: 60vh;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+  z-index: -50;
+
+}
+
+.introtext {
+  /* font-family: "Jaune v0.8 TRIAL Petite Regular"; */
+  font-family: "Literata 20pt";
+  height: 100vh;
+  width: 36vw;
+  font-style: italic;
+  font-weight: normal;
+  color: black;
+  font-size: 1.4vw;
+  line-height: 1.7vw;
+  /* padding-left: 50vw; */
+  padding-left: 2vw;
+  /* padding-right: 16vw; */
+  padding-right: 0;
+  padding-top: 53vh;
+  padding-bottom: 31vh;
+  /* margin-left: 34vw; */
+  /* margin-right: 10vw; */
+  overflow: hidden;
+  float:left;
+  /* position: absolute; */
+  /* z-index: 100; */
+}
+
+#introp2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3vw;
+  line-height: 1.7vw;
+}
+#introp3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3vw;
+  line-height: 1.7vw;
+}
+#introp4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3vw;
+  line-height: 1.7vw;
+}
+
+.leftarrow {
+  padding-top: 48vh;
+  padding-bottom: 30vh;
+  padding-right: 3vw;
+  padding-left: 47vw;
+  width: 14vw;
+  height: 100vh;
+  font-size: 8.5vw;
+  font-family: "Jaune v0.8 TRIAL Petite Bold";
+  color: bisque;
+  /* opacity: 60%; */
+  float:left;
+  font-style: normal;
+}
+
+.rightarrow {
+  padding-top: 48vh;
+  padding-bottom: 30vh;
+  padding-left: 2vw;
+  width: 14vw;
+  height: 100vh;
+  font-size: 8.5vw;
+  font-family: "Jaune v0.8 TRIAL Petite Bold";
+  color: bisque;
+  /* opacity: 60%; */
+  float:left;
+  font-style: normal;
+}
