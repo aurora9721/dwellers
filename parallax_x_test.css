@@ -87,8 +87,8 @@ b {
   transform: translate(-50%, -50%);
   width: 40vw;
   /* font-family: "Jaune v0.8 TRIAL Petite Regular"; */
-  font-family: "Literata 20pt Italic";
-  /* font-style: italic; */
+  font-family: "Literata 20pt";
+  font-style: italic;
   font-size: 2vw;
    /* background-color: black; */
    /* text-shadow: 0 0 10px deepskyblue; */
