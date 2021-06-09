@@ -71,7 +71,9 @@ b {
   font-family: "NaN Jaune Midi Blond";
   font-style: normal;
   font-size: 1.5vw;
-  color: royalblue;
+  color: orange;
+  /* color: white; */
+  /* color: royalblue; */
   /* background-color: beige; */
   padding-bottom: 4vh;
 }
@@ -110,6 +112,7 @@ b {
 #img1 {
   left: 0%;
   top: 0%;
+
 }
 
 #img2 {
