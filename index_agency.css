@@ -187,10 +187,10 @@ img {
 
 .introtext {
   /* font-family: "Jaune v0.8 TRIAL Petite Regular"; */
-  font-family: "Literata 20pt";
+  font-family: "Literata 20pt Italic";
   height: 100vh;
   width: 36vw;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: normal;
   color: black;
   font-size: 1.4vw;
