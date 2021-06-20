@@ -46,8 +46,8 @@ a {
 /* -------------------------TITLE PAGE STYLING */
 
 .titlebg {
-  /* background-color: #008b8b; */
-  background-color: yellow;
+  background-color: #008b8b;
+  /* background-color: yellow; */
   width: 100vw;
   height: 100vh;
   padding: 0;
