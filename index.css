@@ -203,8 +203,10 @@ img {
   position: absolute;
   overflow: hidden;
   /* background-color: #ffb89b; */
-  mix-blend-mode: lighten;
+  /* mix-blend-mode: lighten; */
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: -webkit-blur(20px);
+  backdrop-filter: blur(20px);
   /* background-blend-mode: lighten; */
   /* background-image: url(images/responsabilities1.png) */
   z-index: -80;
@@ -325,6 +327,7 @@ img {
   margin:0;
   display: block;
   position: -webkit-sticky;
+  position: sticky;
   /* background-color: #008b8b; */
   border-radius: 100px;
   z-index: 300;
