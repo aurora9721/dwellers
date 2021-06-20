@@ -1,11 +1,30 @@
-// LANDING PAGE
+// -------- CHOOSE FOR ME RANDOMISER FUNCTION-------------
 
-// // When the user scrolls the page, execute myFunction
-// window.onscroll = function() {myFunction()};
-//
-// function myFunction() {
-//   var winScroll = document.body.scrollLeft || document.documentElement.scrollLeft;
-//   var width = document.documentElement.scrollWidth - document.documentElement.clientWidth;
-//   var scrolled = (winScroll / width) * 100;
-//   document.getElementById("myBar").style.width = scrolled + "%";
-// }
+var sites = [
+    'index_discipline.html',
+    'index_instincts.html',
+    'index_responsabilities.html',
+    'index_agency.html'
+];
+
+function randomSite() {
+    var i = parseInt(Math.random() * sites.length);
+    location.href = sites[i];
+}
+
+// ------- COPY TO CLIPBOARD------------
+
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}

@@ -8,8 +8,8 @@ padding: 0;
 * {
     margin: 0;
     box-sizing: border-box;
-    overflow-y: hidden;
-    overflow-x: scroll;
+    /* overflow-y: hidden;
+    overflow-x: scroll; */
     scroll-behavior: smooth;
 }
 
@@ -19,98 +19,20 @@ a {
   opacity: 100%;
 }
 
-/*
-b {
-  font-style: normal;
-  color: bisque;
-} */
 
 .container{
-  /* background-color: yellow;
-  width: 400vw;
-  z-index: -1000;
-  display: block;
-  position: static; */
-  /* width: 100vw;
-  height: 100vh;
-  overflow: hidden; */
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
+.container2 {
+  overflow-x: hidden;
+  overflow-y: hidden;
 
-.project{
-  width: 100vw;
-  height: 4vh;
-  /* background-color: darkseagreen; */
-  background-color: bisque;
-  /* background-color: #bcd7bc; */
-  /* opacity: 60%; */
-  margin-top: 82vh;
-  margin-bottom: 9vh;
-  margin-left: 80vw;
-  padding-left: 4vw;
-  padding-top: 0.4vh;
-  padding-bottom: 0.4vh;
-  position: fixed;
-  overflow: hidden;
-  z-index: 500;
-  font-family: "Jaune v0.8 TRIAL Petite Bold";
-  color: #abcdab;
-  /* color:  #b6d3b6; */
-  font-size: 1.2vw;
 }
-
-.furtherreading {
-  width: 100vw;
-  height: 4vh;
-  background-color: bisque;
-    /* background-color: #bcd7bc; */
-  /* opacity: 60%; */
-  margin-top: 88vh;
-  margin-bottom: 9vh;
-  margin-left: 80vw;
-  padding-left: 4vw;
-  padding-top: 0.4vh;
-  padding-bottom: 0.4vh;
-  position: fixed;
-  overflow: hidden;
-  z-index: 500;
-  font-family: "Jaune v0.8 TRIAL Petite Bold";
-  color: #abcdab;
-  font-size: 1.2vw;
-}
-
-
-/* Style the header: fixed position (always stay at the top) */
-/* .header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #f1f1f1;
-  overflow: hidden;
-
-} */
-
-/* The progress container (grey background) */
-/* .progress-container {
-  width: 100%;
-  height: 8px;
-  background: #ccc;
-  overflow: hidden;
-
-} */
-
-/* The progress bar (scroll indicator) */
-/* .progress-bar {
-  height: 8px;
-  background: #04AA6D;
-  width: 0%;
-
-} */
-
 
 .titlepg{
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   /* background-color: beige; */
   float: left;
@@ -118,52 +40,77 @@ b {
   padding-top: 6vh; */
   padding: 0;
   margin: 0;
+  overflow: hidden;
+}
+
+/* -------------------------TITLE PAGE STYLING */
+
+.titlebg {
+  background-color: #008b8b;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  overflow: hidden;
+  /* mix-blend-mode: lighten; */
+  /* backdrop-filter: blur(20px); */
+  /* background-blend-mode: lighten; */
+  /* background-image: url(images/responsabilities1.png) */
+  z-index: -200;
+
+}
+
+
+
+img {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -100;
+  object-fit: cover;
+}
+
+#img1 {
+  top: 8vh;
+  left: 15vw;
+  width: 70vw;
+  height: 80vh;
+
+  /* display: block; */
+  /* transform-origin: 100%, 100%; */
 }
 
 .title {
   font-family: "NaN Jaune Book";
   height: 100vh;
-  width: 100vw;
+  text-shadow: 0 0 10px #008b8b, 0 0 10px #008b8b;
+  /* width: 100vw; */
+  overflow: hidden;
   font-style: normal;
   font-weight: normal;
-  /* color: lightsalmon; */
   color: bisque;
-  /* color: #bcd7bc; */
-  background-color: #abcdab;
-  /* opacity: 60%; */
+  mix-blend-mode: hard-light;
   font-size: 10vw;
   line-height: 9vw;
   overflow: hidden;
-  /* text-align:center; */
   padding-left: 7vw;
   padding-top: 10vh;
   padding-bottom: 7vh;
-  position: fixed;
-
-  z-index: -100;
+  position: absolute;
+  z-index: 50;
 }
 
-
-
 .intro {
-  /* font-family: "Jaune v0.8 TRIAL Petite Regular"; */
-  /* font-family: "Literata 20pt";*/
   height: 100vh;
-  width: 400vw;
-  /* font-weight: normal; */
-  /* font-style: normal; */
-  /* color: black; */
-  /* font-size: 1.5vw; */
-  /* line-height: 1.7vw; */
-  /* overflow: hidden; */
-  /* text-align:center; */
-  /* padding-left: 30vw;
-  padding-right: 30vw;
-  padding-top: 10vh;
-  padding-bottom: 6vh; */
-  /* overflow: hidden; */
-  overflow-x: scroll;
-  position:  absolute;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position:  relative;
+  display: block;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
   z-index: 100;
 }
 
@@ -176,73 +123,354 @@ b {
 }
 
 .introtext {
-  /* font-family: "Jaune v0.8 TRIAL Petite Regular"; */
-  font-family: "Literata 20pt";
-  height: 100vh;
-  width: 36vw;
-  font-style: italic;
+  /* font-family: "Literata 20pt"; */
+  /* font-style: italic; */
   font-weight: normal;
-  color: black;
+  color: bisque;
+  text-shadow: 0 0 10px #008b8b, 0 0 10px #008b8b;
+  /* font-size: 1.4vw; */
+  /* line-height: 1.7vw; */
+  font-family: "NaN Jaune Mini Blond";
   font-size: 1.4vw;
-  line-height: 1.7vw;
-  /* padding-left: 50vw; */
-  padding-left: 2vw;
-  /* padding-right: 16vw; */
-  padding-right: 0;
-  padding-top: 53vh;
-  padding-bottom: 31vh;
-  /* margin-left: 34vw; */
-  /* margin-right: 10vw; */
+  line-height: 1.8vw;
+  /* background-color: red; */
+  height: 15vh;
+  width: 35vw;
+  display: block;
+  position: relative;
+  top: 56vh;
+  left: 49vw;
+  margin:0;
+  padding: 0;
   overflow: hidden;
   float:left;
-  /* position: absolute; */
-  /* z-index: 100; */
 }
 
-#introp2 {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.3vw;
-  line-height: 1.7vw;
-}
-#introp3 {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.3vw;
-  line-height: 1.7vw;
-}
-#introp4 {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.3vw;
-  line-height: 1.7vw;
-}
-
-.leftarrow {
-  padding-top: 48vh;
-  padding-bottom: 30vh;
-  padding-right: 3vw;
-  padding-left: 47vw;
-  width: 14vw;
-  height: 100vh;
-  font-size: 8.5vw;
-  font-family: "Jaune v0.8 TRIAL Petite Bold";
-  color: bisque;
-  /* opacity: 60%; */
+.downarrow {
+  width: auto;
+  height: auto;
+  top: 84vh;
+  left: 45vw;
+  padding: 0.5em;
+  /* padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 1vw;
+  padding-right: 1vw; */
+  margin:0;
+  display: block;
+  position: absolute;
+  background-color: bisque;
+  border-radius: 100px;
+  z-index: 100;
   float:left;
+  font-size: 1.2vw;
+  font-family: "NaN Jaune Mini Blond";
+  color: #008b8b;
   font-style: normal;
+  text-align: center;
+
 }
 
-.rightarrow {
-  padding-top: 48vh;
-  padding-bottom: 30vh;
-  padding-left: 2vw;
-  width: 14vw;
+/* -------------------PAGE: CATEGORY----------------- */
+
+.categorypg {
+  width: 100vw;
+  height: 135vh;
+  /* background-color: yellow; */
+  float: left;
+  /* display: flex; */
+  padding: 0;
+  margin: 0;
+  position: inherit;
+  overflow: hidden;
+  /* background-color: #ffb89b; */
+  /* mix-blend-mode: lighten; */
+  /* background-blend-mode: lighten; */
+  /* background-image: url(images/responsabilities1.png) */
+
+}
+
+/* ----------------------CATEGORY STYLING ----------------------*/
+
+.categorybg {
+  width: 98vw;
+  height: 135vh;
+  /* background-color: yellow; */
+  /* float: left; */
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  overflow: hidden;
+  /* background-color: #ffb89b; */
+  mix-blend-mode: lighten;
+  backdrop-filter: blur(20px);
+  /* background-blend-mode: lighten; */
+  /* background-image: url(images/responsabilities1.png) */
+  z-index: -80;
+
+}
+
+.subtitle {
+  font-family: "NaN Jaune Book";
+  font-size: 10vw;
+  line-height: 9vw;
   height: 100vh;
-  font-size: 8.5vw;
-  font-family: "Jaune v0.8 TRIAL Petite Bold";
-  color: bisque;
-  /* opacity: 60%; */
-  float:left;
+  /* width: 100vw; */
   font-style: normal;
+  font-weight: normal;
+  color: bisque;
+  /* color: darkseagreen; */
+  /* background-color:   #ffb89b; */
+  /* opacity: 60%; */
+  /* overflow: hidden; */
+  /* text-align:center; */
+  padding-left: 7vw;
+  padding-top: 10vh;
+  padding-bottom: 7vh;
+  /* position: fixed; */
+  position: absolute;
+  /* z-index: -100; */
+  text-shadow: 0 0 10px #008b8b, 0 0 10px #008b8b;
+
+}
+
+#subtitle1 {
+  font-size: 5vw;
+  line-height: 5vw;
+}
+
+.questions {
+  height: 16vh;
+  width: 56vw;
+  font-family: "NaN Jaune Mini Blond";
+  font-size: 1.4vw;
+  line-height: 1.9vw;
+  font-weight: normal;
+  color: bisque;
+  text-shadow: 0 0 10px #008b8b, 0 0 10px #008b8b;
+  /* font-family: "Literata 20pt";
+  font-size: 1.5vw;
+  line-height: 1.9vw;
+  font-style: italic;*/
+  margin-left: 1vw;
+  margin-top: 4vh;
+  margin-bottom: 50vh;
+  overflow: hidden;
+  float:left;
+  z-index: 100;
+}
+
+.choicecontainer {
+  width: 70vw;
+  height: 80vh;
+  top:20%;
+  left:15%;
+  right: 15%;
+  /* transform: translate(40%, 30%); */
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: 0;
+  padding: 0;
+  /* margin-top: 37vh;
+  margin-left: 5vw;
+  margin-right: 5vw; */
+  z-index: 100;
+  /* background-color: bisque; */
+}
+
+.choicetitle {
+  width: 60vw;
+  height: 6vh;
+  float: left;
+  /* justify-content: center; */
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 0;
+  margin-top: 2.5vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  overflow: hidden;
+  border-top: 2px solid #008b8b;;
+  /* background-color: red; */
+  background-color: bisque;
+  /* border-radius: 5px; */
+  font-family: "NaN Jaune Mini Blond";
+  font-size: 1.4vw;
+  color: #008b8b;
+
+}
+
+/* .choicetitle:active {
+  height:30vh;
+  color: red;
+} */
+
+.choicetitle:hover {
+  /* background-color:   #ffc1a9; */
+  /* background-color:   white; */
+  /* opacity: 60%; */
+}
+
+.randomchoice {
+  width: auto;
+  height: auto;
+  top: 26vh;
+  left: 77vw;
+  padding: 1em;
+  /* padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 1vw;
+  padding-right: 1vw; */
+  margin:0;
+  display: block;
+  /* position: relative; */
+  position: sticky;
+  /* background-color: bisque; */
+  /* background-color: #008b8b; */
+  border-radius: 100px;
+  z-index: 300;
+  float:left;
+  font-size: 1.4vw;
+  font-family: "NaN Jaune Mini Blond";
+  /* color: #008b8b; */
+  color: bisque;
+  font-style: normal;
+  text-align: center;
+  transform: rotate(20deg);
+  /* text-shadow: 0 0 10px #008b8b, 0 0 10px #008b8b; */
+  /* box-shadow: 0 0 10px #008b8b, 0 0 10px #008b8b; */
+  box-shadow: 0 0 10px bisque, 0 0 10px bisque;
+
+
+}
+
+.choicecontent {
+  width: 60vw;
+  height: 7vh;
+  float: left;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  /* margin-bottom: 2.5vh;
+  margin-top: 2.5vh; */
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  overflow: hidden;
+  /* display: none; */
+  background-color: bisque;
+  font-family: "Literata 20pt";
+  font-size: 1.4vw;
+  line-height: 1.6vw;
+  color: dimgrey;
+  font-style: italic;
+}
+
+.choicecontent:hover {
+  height: 30vh;
+}
+
+.choicecard {
+  width: 33.3%;
+  height: 27vh;
+  float:left;
+  /* justify-content: center; */
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  /* background-color: green; */
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top:0;
+  margin: 0 auto;
+}
+
+.cardtitle {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+}
+
+#imgcard1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 3vh;
+  object-fit: scale-down;
+  z-index: 100;
+}
+
+
+.choicetext {
+  width: inherit;
+  padding-right: 1vw;
+  height: inherit;
+  font-family: "Literata 20pt";
+  font-size: 1.3vw;
+  line-height: 1.6vw;
+  color: darkgrey;
+  font-style: italic;
+  overflow: hidden;
+  padding-top: 1vh;
+  /* mix-blend-mode: multiply; */
+}
+
+/* --------------------- FOOTER: ABOUT + CONTACT ----------------------- */
+
+.footerpg {
+  width: 100vw;
+  height: 200vh;
+  /* background-color: yellow; */
+  float: left;
+  padding: 0;
+  margin: 0;
+  position: inherit;
+
+}
+
+.footer {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  top:100vh;
+  left:0;
+  background-color: bisque;
+}
+
+.footertitle {
+  width: 100vw;
+  height: 100vh;
+  top:100vh;
+  left:0;
+  background-color: bisque;
+  float: left;
+  padding: 6em;
+  /* padding-left: 6em; */
+  margin: 0;
+  position: relative;
+  display: block;
+  font-family: "NaN Jaune Mini Blond";
+  color: #008b8b;
+  font-size: 1.3vw;
+
+}
+
+.footertext {
+  width: 100vw;
+  padding-left:25vw;
+  padding-right: 25vw;
+  padding-top: 1em;
+  font-family: "Literata 20pt";
+  font-style: italic;
+  color: black;
 }
