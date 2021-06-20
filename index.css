@@ -204,7 +204,7 @@ img {
   overflow: hidden;
   /* background-color: #ffb89b; */
   mix-blend-mode: lighten;
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   /* background-blend-mode: lighten; */
   /* background-image: url(images/responsabilities1.png) */
   z-index: -80;
@@ -322,28 +322,19 @@ img {
   top: 26vh;
   left: 77vw;
   padding: 1em;
-  /* padding-top: 1vh;
-  padding-bottom: 1vh;
-  padding-left: 1vw;
-  padding-right: 1vw; */
   margin:0;
   display: block;
-  /* position: relative; */
-  position: sticky;
-  /* background-color: bisque; */
+  position: -webkit-sticky;
   /* background-color: #008b8b; */
   border-radius: 100px;
   z-index: 300;
   float:left;
   font-size: 1.4vw;
   font-family: "NaN Jaune Mini Blond";
-  /* color: #008b8b; */
   color: bisque;
   font-style: normal;
   text-align: center;
   transform: rotate(20deg);
-  /* text-shadow: 0 0 10px #008b8b, 0 0 10px #008b8b; */
-  /* box-shadow: 0 0 10px #008b8b, 0 0 10px #008b8b; */
   box-shadow: 0 0 10px bisque, 0 0 10px bisque;
 
 
