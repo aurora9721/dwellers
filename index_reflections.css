@@ -18,6 +18,30 @@ b {
   font-size: 1.7vw;
 }
 
+
+audio {
+    width: 300px;
+    height: 54px;
+    position: absolute;
+    display:block;
+    z-index: 100;
+    top: 84vh;
+    left: 70vw;
+}
+
+audio::-webkit-media-controls-panel{
+  background-color: #33a2a2;
+}
+
+
+
+/* .audiocontrols {
+  position: absolute;
+  display:block;
+  z-index: 100;
+} */
+
+
 .parallax {
   perspective: 1px;
   height: 100vh;
