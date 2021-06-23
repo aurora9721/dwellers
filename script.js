@@ -4,7 +4,7 @@ var sites = [
     'index_discipline.html',
     'index_instincts.html',
     'index_responsabilities.html',
-    'index_agency.html'
+    'index_agency.html',
     'index_endings.html'
 ];
 
