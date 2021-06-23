@@ -5,6 +5,7 @@ var sites = [
     'index_instincts.html',
     'index_responsabilities.html',
     'index_agency.html'
+    'index_endings.html'
 ];
 
 function randomSite() {
